@@ -1,0 +1,39 @@
+
+# "searchString": "language:Javascript sort:followers",
+# "afterCursor": null
+
+
+query SearchUsers($searchString: String!, $afterCursor: String) {
+  search(query: $searchString,
+    type: USER, first: 10, after: $afterCursor) {
+    userCount
+    pageInfo {
+      ... PagePosition
+    }
+    edges {
+      node {
+        ... DeveloperDetails
+      }
+    }
+  }
+}
+
+fragment PagePosition on PageInfo {
+  endCursor
+  hasNextPage
+}
+
+fragment DeveloperDetails on User {
+  name
+  url
+  login
+  bio
+  email
+  location
+  avatarUrl
+  followers {
+    totalCount
+  }
+  createdAt
+  isHireable
+}

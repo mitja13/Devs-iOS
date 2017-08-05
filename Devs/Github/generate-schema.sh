@@ -1,0 +1,1 @@
+apollo-codegen download-schema https://api.github.com/graphql --output Schema.json --header "Authorization: Bearer b2be7746b12d83228808e18c44b3d8bd72af7369"
