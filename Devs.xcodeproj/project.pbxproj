@@ -18,6 +18,18 @@
 		C53B7E031F3227D100B5204F /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53B7E021F3227D100B5204F /* ListCell.swift */; };
 		C53B7E061F32A1FF00B5204F /* DetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53B7E051F32A1FE00B5204F /* DetailsController.swift */; };
 		C57106581F34D7AF00829D5B /* Formats.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57106571F34D7AF00829D5B /* Formats.swift */; };
+		C57F491C1F383ABE00DE5005 /* DetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53B7E051F32A1FE00B5204F /* DetailsController.swift */; };
+		C57F491D1F383ABE00DE5005 /* LoadController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51B20F91F2F83A7003BA7F9 /* LoadController.swift */; };
+		C57F491E1F383ABE00DE5005 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51B21121F3003EE003BA7F9 /* API.swift */; };
+		C57F491F1F383ABE00DE5005 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51B20F71F2F83A7003BA7F9 /* AppDelegate.swift */; };
+		C57F49201F383ABE00DE5005 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53B7E021F3227D100B5204F /* ListCell.swift */; };
+		C57F49211F383ABE00DE5005 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53B7E001F321D3A00B5204F /* ListController.swift */; };
+		C57F49221F383ABE00DE5005 /* Formats.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57106571F34D7AF00829D5B /* Formats.swift */; };
+		C57F49241F383ABE00DE5005 /* Pods_Devs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96026B46ECDA2C5C8E6EA80E /* Pods_Devs.framework */; };
+		C57F49261F383ABE00DE5005 /* SearchUsers.graphql in Resources */ = {isa = PBXBuildFile; fileRef = C51B21141F300408003BA7F9 /* SearchUsers.graphql */; };
+		C57F49271F383ABE00DE5005 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C51B21001F2F83A7003BA7F9 /* LaunchScreen.storyboard */; };
+		C57F49281F383ABE00DE5005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C51B20FE1F2F83A7003BA7F9 /* Assets.xcassets */; };
+		C57F49291F383ABE00DE5005 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C51B20FB1F2F83A7003BA7F9 /* Main.storyboard */; };
 		C6FBED3018D7134B1956FBA0 /* Pods_Devs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96026B46ECDA2C5C8E6EA80E /* Pods_Devs.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +50,8 @@
 		C53B7E021F3227D100B5204F /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		C53B7E051F32A1FE00B5204F /* DetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsController.swift; sourceTree = "<group>"; };
 		C57106571F34D7AF00829D5B /* Formats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formats.swift; sourceTree = "<group>"; };
+		C57F49301F383ABE00DE5005 /* Devs Blue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Devs Blue.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C57F49311F383ABE00DE5005 /* Info-Blue.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-Blue.plist"; path = "/Users/Mitja/Projects/umwerk-assignment/source/Devs-iOS/Devs/Info-Blue.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +60,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6FBED3018D7134B1956FBA0 /* Pods_Devs.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C57F49231F383ABE00DE5005 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C57F49241F383ABE00DE5005 /* Pods_Devs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				C51B20F41F2F83A7003BA7F9 /* Devs.app */,
+				C57F49301F383ABE00DE5005 /* Devs Blue.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,6 +113,7 @@
 				C51B21001F2F83A7003BA7F9 /* LaunchScreen.storyboard */,
 				C51B20FE1F2F83A7003BA7F9 /* Assets.xcassets */,
 				C51B21031F2F83A7003BA7F9 /* Info.plist */,
+				C57F49311F383ABE00DE5005 /* Info-Blue.plist */,
 			);
 			path = Devs;
 			sourceTree = "<group>";
@@ -154,6 +178,27 @@
 			productReference = C51B20F41F2F83A7003BA7F9 /* Devs.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C57F49191F383ABE00DE5005 /* Devs Blue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C57F492D1F383ABE00DE5005 /* Build configuration list for PBXNativeTarget "Devs Blue" */;
+			buildPhases = (
+				C57F491A1F383ABE00DE5005 /* [CP] Check Pods Manifest.lock */,
+				C57F491B1F383ABE00DE5005 /* Sources */,
+				C57F49231F383ABE00DE5005 /* Frameworks */,
+				C57F49251F383ABE00DE5005 /* Resources */,
+				C57F492A1F383ABE00DE5005 /* [CP] Embed Pods Frameworks */,
+				C57F492B1F383ABE00DE5005 /* [CP] Copy Pods Resources */,
+				C57F492C1F383ABE00DE5005 /* Generate Apollo GraphQL API */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Devs Blue";
+			productName = Devs;
+			productReference = C57F49301F383ABE00DE5005 /* Devs Blue.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -183,6 +228,7 @@
 			projectRoot = "";
 			targets = (
 				C51B20F31F2F83A7003BA7F9 /* Devs */,
+				C57F49191F383ABE00DE5005 /* Devs Blue */,
 			);
 		};
 /* End PBXProject section */
@@ -196,6 +242,17 @@
 				C51B21021F2F83A7003BA7F9 /* LaunchScreen.storyboard in Resources */,
 				C51B20FF1F2F83A7003BA7F9 /* Assets.xcassets in Resources */,
 				C51B20FD1F2F83A7003BA7F9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C57F49251F383ABE00DE5005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C57F49261F383ABE00DE5005 /* SearchUsers.graphql in Resources */,
+				C57F49271F383ABE00DE5005 /* LaunchScreen.storyboard in Resources */,
+				C57F49281F383ABE00DE5005 /* Assets.xcassets in Resources */,
+				C57F49291F383ABE00DE5005 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,7 +286,66 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "APOLLO_FRAMEWORK_PATH=\"$(eval find $FRAMEWORK_SEARCH_PATHS -name \"Apollo.framework\" -maxdepth 1)\"\n\nif [ -z \"$APOLLO_FRAMEWORK_PATH\" ]; then\necho \"error: Couldn't find Apollo.framework in FRAMEWORK_SEARCH_PATHS; make sure to add the framework to your project.\"\nexit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}/Github\"\n$APOLLO_FRAMEWORK_PATH/check-and-run-apollo-codegen.sh generate $(find . -name '*.graphql') --schema Schema.json --output API.swift\n";
+			shellScript = "APOLLO_FRAMEWORK_PATH=\"$(eval find $FRAMEWORK_SEARCH_PATHS -name \"Apollo.framework\" -maxdepth 1)\"\n\nif [ -z \"$APOLLO_FRAMEWORK_PATH\" ]; then\necho \"error: Couldn't find Apollo.framework in FRAMEWORK_SEARCH_PATHS; make sure to add the framework to your project.\"\nexit 1\nfi\n\ncd \"${SRCROOT}/Devs/Github\"\n$APOLLO_FRAMEWORK_PATH/check-and-run-apollo-codegen.sh generate $(find . -name '*.graphql') --schema Schema.json --output API.swift\n";
+		};
+		C57F491A1F383ABE00DE5005 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C57F492A1F383ABE00DE5005 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Devs/Pods-Devs-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C57F492B1F383ABE00DE5005 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Devs/Pods-Devs-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C57F492C1F383ABE00DE5005 /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APOLLO_FRAMEWORK_PATH=\"$(eval find $FRAMEWORK_SEARCH_PATHS -name \"Apollo.framework\" -maxdepth 1)\"\n\nif [ -z \"$APOLLO_FRAMEWORK_PATH\" ]; then\necho \"error: Couldn't find Apollo.framework in FRAMEWORK_SEARCH_PATHS; make sure to add the framework to your project.\"\nexit 1\nfi\n\ncd \"${SRCROOT}/Devs/Github\"\n$APOLLO_FRAMEWORK_PATH/check-and-run-apollo-codegen.sh generate $(find . -name '*.graphql') --schema Schema.json --output API.swift\n";
 		};
 		CFE27FDB5AF681019C4D43DE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -275,6 +391,20 @@
 				C53B7E031F3227D100B5204F /* ListCell.swift in Sources */,
 				C53B7E011F321D3A00B5204F /* ListController.swift in Sources */,
 				C57106581F34D7AF00829D5B /* Formats.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C57F491B1F383ABE00DE5005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C57F491C1F383ABE00DE5005 /* DetailsController.swift in Sources */,
+				C57F491D1F383ABE00DE5005 /* LoadController.swift in Sources */,
+				C57F491E1F383ABE00DE5005 /* API.swift in Sources */,
+				C57F491F1F383ABE00DE5005 /* AppDelegate.swift in Sources */,
+				C57F49201F383ABE00DE5005 /* ListCell.swift in Sources */,
+				C57F49211F383ABE00DE5005 /* ListController.swift in Sources */,
+				C57F49221F383ABE00DE5005 /* Formats.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,12 +545,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2H33AJFN8Y;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"BLUE=0",
+				);
 				INFOPLIST_FILE = Devs/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "co.mitja.devs-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -431,10 +566,59 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2H33AJFN8Y;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"BLUE=0",
+				);
 				INFOPLIST_FILE = Devs/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "co.mitja.devs-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C57F492E1F383ABE00DE5005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14EAFF3623355F19D2B980D8 /* Pods-Devs.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2H33AJFN8Y;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"BLUE=1",
+				);
+				INFOPLIST_FILE = "Devs/Info-Blue.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) -DBLUE";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.mitja.devs-ios-Blue";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C57F492F1F383ABE00DE5005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB6CDAC48508BCCA20711434 /* Pods-Devs.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2H33AJFN8Y;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"BLUE=1",
+				);
+				INFOPLIST_FILE = "Devs/Info-Blue.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) -DBLUE";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.mitja.devs-ios-Blue";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -458,6 +642,15 @@
 			buildConfigurations = (
 				C51B21071F2F83A7003BA7F9 /* Debug */,
 				C51B21081F2F83A7003BA7F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C57F492D1F383ABE00DE5005 /* Build configuration list for PBXNativeTarget "Devs Blue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C57F492E1F383ABE00DE5005 /* Debug */,
+				C57F492F1F383ABE00DE5005 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

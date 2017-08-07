@@ -26,6 +26,10 @@ class LoadController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        #if BLUE
+        view.backgroundColor = UIColor.blue
+        #endif
+        
         languagePicker.delegate = self
         languagePicker.dataSource = self
         viewListButton.layer.cornerRadius = 8
