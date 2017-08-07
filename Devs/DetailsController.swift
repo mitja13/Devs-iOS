@@ -35,9 +35,16 @@ class DetailsController: UIViewController {
         
         updateDeveloper()
     }
+    
+// MARK: - UIViewController
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    @IBAction func sendEmailPressed(_ sender: Any) {
+        let to = emailLabel.text!
+        let url = URL(string: "mailto:\(to)")!
+        
+        if UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url)
+        }
     }
     
 // MARK: - Update
@@ -50,6 +57,7 @@ class DetailsController: UIViewController {
         registeredLabel?.text = "Registered since \(registeredDate)"
         locationLabel?.text = developer?.location
         emailLabel?.text = developer?.email
+        sendEmailButton.isHidden = developer?.email == ""
         loadImageAsync(url: developer!.avatarUrl, imageView: avatarImage)
     }
 }
