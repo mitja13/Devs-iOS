@@ -19,6 +19,7 @@ class ListController: UIViewController {
     var developers: [DeveloperDetails] = [] {
         didSet {
             tableView.reloadData()
+            shareToWidgetRandomDeveloper(developers: developers)
         }
     }
     var searchString: String?
@@ -41,6 +42,25 @@ class ListController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+
+// MARK: - UserDefaults
+
+    func shareToWidgetRandomDeveloper(developers: [DeveloperDetails]) {
+        let index = Int(arc4random_uniform(UInt32(developers.count)))
+        shareToWidget(developer: developers[index])
+    }
+    
+    func shareToWidget(developer: DeveloperDetails) {
+        let name = developer.name
+        let registredYear = formatDate(from: developer.createdAt, format: "YYYY")
+        let followersCount = formatPoints(from: developer.followers.totalCount)
+        let desc = "Registred \(registredYear!) • Followers \(followersCount)"
+        let thumbUrl = "\(developer.avatarUrl)&s=80"
+        
+        UserDefaults.init(suiteName: "group.co.mitja.devs-ios")?.setValue(name, forKey: "name")
+        UserDefaults.init(suiteName: "group.co.mitja.devs-ios")?.setValue(desc, forKey: "desc")
+        UserDefaults.init(suiteName: "group.co.mitja.devs-ios")?.setValue(thumbUrl, forKey: "thumbUrl")
     }
 
 // MARK: - IBAction
@@ -102,13 +122,13 @@ extension ListController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListCell", for: indexPath) as! ListCell
 
-        let developerDetails = developers[indexPath.row]
-        let registredYear = formatDate(from: developerDetails.createdAt, format: "YYYY")
-        let followersCount = formatPoints(from: developerDetails.followers.totalCount)
+        let developer = developers[indexPath.row]
+        let registredYear = formatDate(from: developer.createdAt, format: "YYYY")
+        let followersCount = formatPoints(from: developer.followers.totalCount)
         let description = "Registred \(registredYear!) • Followers \(followersCount)"
-        let thumbnailUrl = "\(developerDetails.avatarUrl)&s=80"
+        let thumbnailUrl = "\(developer.avatarUrl)&s=80"
         
-        cell.nameLabel.text = developerDetails.name
+        cell.nameLabel.text = developer.name
         cell.descLabel.text = description
         loadImageAsync(url: thumbnailUrl, imageView: cell.thumbImage)
 
