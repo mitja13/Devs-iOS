@@ -30,8 +30,36 @@
 		C57F49271F383ABE00DE5005 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C51B21001F2F83A7003BA7F9 /* LaunchScreen.storyboard */; };
 		C57F49281F383ABE00DE5005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C51B20FE1F2F83A7003BA7F9 /* Assets.xcassets */; };
 		C57F49291F383ABE00DE5005 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C51B20FB1F2F83A7003BA7F9 /* Main.storyboard */; };
+		C57F49381F38585500DE5005 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C57F49371F38585500DE5005 /* NotificationCenter.framework */; };
+		C57F493B1F38585500DE5005 /* WidgetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57F493A1F38585500DE5005 /* WidgetController.swift */; };
+		C57F493E1F38585500DE5005 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C57F493C1F38585500DE5005 /* MainInterface.storyboard */; };
+		C57F49421F38585500DE5005 /* Devs Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C57F49361F38585500DE5005 /* Devs Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C6FBED3018D7134B1956FBA0 /* Pods_Devs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96026B46ECDA2C5C8E6EA80E /* Pods_Devs.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C57F49401F38585500DE5005 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C51B20EC1F2F83A7003BA7F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C57F49351F38585500DE5005;
+			remoteInfo = "Devs Widget";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C57F49461F38585500DE5005 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C57F49421F38585500DE5005 /* Devs Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		14EAFF3623355F19D2B980D8 /* Pods-Devs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Devs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Devs/Pods-Devs.debug.xcconfig"; sourceTree = "<group>"; };
@@ -52,6 +80,14 @@
 		C57106571F34D7AF00829D5B /* Formats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formats.swift; sourceTree = "<group>"; };
 		C57F49301F383ABE00DE5005 /* Devs Blue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Devs Blue.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C57F49311F383ABE00DE5005 /* Info-Blue.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-Blue.plist"; path = "/Users/Mitja/Projects/umwerk-assignment/source/Devs-iOS/Devs/Info-Blue.plist"; sourceTree = "<absolute>"; };
+		C57F49361F38585500DE5005 /* Devs Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Devs Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C57F49371F38585500DE5005 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		C57F493A1F38585500DE5005 /* WidgetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetController.swift; sourceTree = "<group>"; };
+		C57F493D1F38585500DE5005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		C57F493F1F38585500DE5005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5A0A8701F39E64D004A1A3B /* Devs Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Devs Widget.entitlements"; sourceTree = "<group>"; };
+		C5A0A8711F39E699004A1A3B /* Devs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Devs.entitlements; sourceTree = "<group>"; };
+		C5A0A8721F39E6A4004A1A3B /* Devs Blue.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Devs Blue.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +107,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C57F49331F38585500DE5005 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C57F49381F38585500DE5005 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				96026B46ECDA2C5C8E6EA80E /* Pods_Devs.framework */,
+				C57F49371F38585500DE5005 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -86,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				C51B20F61F2F83A7003BA7F9 /* Devs */,
+				C57F49391F38585500DE5005 /* Devs Widget */,
 				C51B20F51F2F83A7003BA7F9 /* Products */,
 				FEF2AD8CD2672EFB0072D008 /* Pods */,
 				355F8AB9CD540CDF6BAAE1E3 /* Frameworks */,
@@ -97,6 +143,7 @@
 			children = (
 				C51B20F41F2F83A7003BA7F9 /* Devs.app */,
 				C57F49301F383ABE00DE5005 /* Devs Blue.app */,
+				C57F49361F38585500DE5005 /* Devs Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,6 +161,8 @@
 				C51B20FE1F2F83A7003BA7F9 /* Assets.xcassets */,
 				C51B21031F2F83A7003BA7F9 /* Info.plist */,
 				C57F49311F383ABE00DE5005 /* Info-Blue.plist */,
+				C5A0A8711F39E699004A1A3B /* Devs.entitlements */,
+				C5A0A8721F39E6A4004A1A3B /* Devs Blue.entitlements */,
 			);
 			path = Devs;
 			sourceTree = "<group>";
@@ -145,6 +194,17 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		C57F49391F38585500DE5005 /* Devs Widget */ = {
+			isa = PBXGroup;
+			children = (
+				C5A0A8701F39E64D004A1A3B /* Devs Widget.entitlements */,
+				C57F493A1F38585500DE5005 /* WidgetController.swift */,
+				C57F493C1F38585500DE5005 /* MainInterface.storyboard */,
+				C57F493F1F38585500DE5005 /* Info.plist */,
+			);
+			path = "Devs Widget";
+			sourceTree = "<group>";
+		};
 		FEF2AD8CD2672EFB0072D008 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,10 +228,12 @@
 				1CF05353ABA704F3FAB21402 /* [CP] Embed Pods Frameworks */,
 				FD9BE9FACB46654BF7A26758 /* [CP] Copy Pods Resources */,
 				C51B210C1F2FE3A0003BA7F9 /* Generate Apollo GraphQL API */,
+				C57F49461F38585500DE5005 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C57F49411F38585500DE5005 /* PBXTargetDependency */,
 			);
 			name = Devs;
 			productName = Devs;
@@ -199,6 +261,23 @@
 			productReference = C57F49301F383ABE00DE5005 /* Devs Blue.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C57F49351F38585500DE5005 /* Devs Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C57F49451F38585500DE5005 /* Build configuration list for PBXNativeTarget "Devs Widget" */;
+			buildPhases = (
+				C57F49321F38585500DE5005 /* Sources */,
+				C57F49331F38585500DE5005 /* Frameworks */,
+				C57F49341F38585500DE5005 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Devs Widget";
+			productName = "Devs Widget";
+			productReference = C57F49361F38585500DE5005 /* Devs Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -211,6 +290,27 @@
 				TargetAttributes = {
 					C51B20F31F2F83A7003BA7F9 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					C57F49191F383ABE00DE5005 = {
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					C57F49351F38585500DE5005 = {
+						CreatedOnToolsVersion = 9.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -229,6 +329,7 @@
 			targets = (
 				C51B20F31F2F83A7003BA7F9 /* Devs */,
 				C57F49191F383ABE00DE5005 /* Devs Blue */,
+				C57F49351F38585500DE5005 /* Devs Widget */,
 			);
 		};
 /* End PBXProject section */
@@ -253,6 +354,14 @@
 				C57F49271F383ABE00DE5005 /* LaunchScreen.storyboard in Resources */,
 				C57F49281F383ABE00DE5005 /* Assets.xcassets in Resources */,
 				C57F49291F383ABE00DE5005 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C57F49341F38585500DE5005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C57F493E1F38585500DE5005 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,7 +517,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C57F49321F38585500DE5005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C57F493B1F38585500DE5005 /* WidgetController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C57F49411F38585500DE5005 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C57F49351F38585500DE5005 /* Devs Widget */;
+			targetProxy = C57F49401F38585500DE5005 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C51B20FB1F2F83A7003BA7F9 /* Main.storyboard */ = {
@@ -425,6 +550,14 @@
 				C51B21011F2F83A7003BA7F9 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C57F493C1F38585500DE5005 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C57F493D1F38585500DE5005 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -543,7 +676,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14EAFF3623355F19D2B980D8 /* Pods-Devs.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Devs/Devs.entitlements;
 				DEVELOPMENT_TEAM = 2H33AJFN8Y;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -564,7 +699,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AB6CDAC48508BCCA20711434 /* Pods-Devs.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Devs/Devs.entitlements;
 				DEVELOPMENT_TEAM = 2H33AJFN8Y;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -586,6 +723,7 @@
 			baseConfigurationReference = 14EAFF3623355F19D2B980D8 /* Pods-Devs.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Devs Blue.entitlements";
 				DEVELOPMENT_TEAM = 2H33AJFN8Y;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -608,6 +746,7 @@
 			baseConfigurationReference = AB6CDAC48508BCCA20711434 /* Pods-Devs.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Devs Blue.entitlements";
 				DEVELOPMENT_TEAM = 2H33AJFN8Y;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -620,6 +759,38 @@
 				OTHER_SWIFT_FLAGS = "$(inherited) -DBLUE";
 				PRODUCT_BUNDLE_IDENTIFIER = "co.mitja.devs-ios-Blue";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C57F49431F38585500DE5005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Devs Widget/Devs Widget.entitlements";
+				DEVELOPMENT_TEAM = 2H33AJFN8Y;
+				INFOPLIST_FILE = "Devs Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.mitja.devs-ios.Devs-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C57F49441F38585500DE5005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Devs Widget/Devs Widget.entitlements";
+				DEVELOPMENT_TEAM = 2H33AJFN8Y;
+				INFOPLIST_FILE = "Devs Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.mitja.devs-ios.Devs-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -651,6 +822,15 @@
 			buildConfigurations = (
 				C57F492E1F383ABE00DE5005 /* Debug */,
 				C57F492F1F383ABE00DE5005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C57F49451F38585500DE5005 /* Build configuration list for PBXNativeTarget "Devs Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C57F49431F38585500DE5005 /* Debug */,
+				C57F49441F38585500DE5005 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

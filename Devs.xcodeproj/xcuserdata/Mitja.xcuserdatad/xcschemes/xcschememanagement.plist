@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>Devs Widget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>Devs.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>C57F49191F383ABE00DE5005</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C57F49351F38585500DE5005</key>
 		<dict>
 			<key>primary</key>
 			<true/>
