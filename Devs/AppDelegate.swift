@@ -10,7 +10,7 @@ import Apollo
 
 let apollo: ApolloClient = {
     let endpointUrl = "https://api.github.com/graphql"
-    let authToken = "b2be7746b12d83228808e18c44b3d8bd72af7369"
+    let authToken = readAccessTokenFromPlist()!
     
     let configuration = URLSessionConfiguration.default
     configuration.httpAdditionalHeaders = ["Authorization": "Bearer \(authToken)"]

@@ -36,6 +36,8 @@
 	<array>
 		<string>mailto</string>
 	</array>
+	<key>GithubAccessToken</key>
+	<string>e9b994a0eddca5c2a84cdce1e1806766d924a7c9</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

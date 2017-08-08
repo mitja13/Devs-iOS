@@ -49,3 +49,11 @@ public func loadImageAsync(url: String, imageView: UIImageView) {
 
     }).resume()
 }
+
+public func readAccessTokenFromPlist() -> String? {
+    guard let path = Bundle.main.path(forResource: "Info", ofType: "plist") else { return nil}
+    guard let dict = NSDictionary(contentsOfFile: path) else { return nil }
+    guard let token = dict["GithubAccessToken"] else { return nil }
+    
+    return token as? String
+}
